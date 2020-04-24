@@ -2236,7 +2236,7 @@
                                 var DOMPARSER = new DOMParser().parseFromString.bind(new DOMParser());
                                 var monthShortNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec" ];
 
-                                fetch(document.location.protocol + '//' + document.location.host + '/oahuislandproperties/feed').then(function (res) {
+                                fetch(document.location.protocol + '//' + document.location.host + '/oahuislandproperties/feed.xml').then(function (res) {
                                     res.text().then(function (str) {
                                         var doc = DOMPARSER(str, "text/xml");
                                         var items = doc.querySelectorAll('item');
