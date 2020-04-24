@@ -62,7 +62,7 @@
 
         <div class="nav-container">
             <div class="logo">
-                <a href="/dash/realgeeks/home">
+                <a href="/oahuislandproperties">
 
 
                     <img style="max-height:10.75px;max-width:50px;transform:scale(4);transform-origin:center left" src="https://u.realgeeks.media/oahuislandproperties/logo.png" alt="" title="">
@@ -72,13 +72,13 @@
                 <div class="inner">
 
                     <ul>
-                        <li><a href="/dash/realgeeks/home/?template=oahuislandproperties"><span>Home</span></a></li>
-                        <li><a href="/dash/realgeeks/search/advanced_search/?template=oahuislandproperties" ><span>Advanced Search</span></a></li>
-                        <li><a href="/dash/realgeeks/search/market_report_search/?template=oahuislandproperties" class="popup"><span>Market Reports</span></a></li>
-                        <li><a href="/dash/realgeeks/foreclosures/?template=oahuislandproperties"><span>Foreclosures</span></a></li>
-                        <li><a href="/dash/realgeeks/about/?template=oahuislandproperties"><span>About</span></a></li>
-                        <li><a href="/dash/realgeeks/blog/?template=oahuislandproperties"><span>Blog</span></a></li>
-                        <li><a href="/dash/realgeeks/member/contact/?template=oahuislandproperties" class="popup" rel="nofollow"><span>Contact Us</span></a></li>
+                        <li><a href="/oahuislandproperties/?template=oahuislandproperties"><span>Home</span></a></li>
+                        <li><a href="/oahuislandproperties/search/advanced_search/?template=oahuislandproperties" ><span>Advanced Search</span></a></li>
+                        <li><a href="/oahuislandproperties/search/market_report_search/?template=oahuislandproperties" class="popup"><span>Market Reports</span></a></li>
+                        <li><a href="/oahuislandproperties/foreclosures/?template=oahuislandproperties"><span>Foreclosures</span></a></li>
+                        <li><a href="/oahuislandproperties/about/?template=oahuislandproperties"><span>About</span></a></li>
+                        <li><a href="/oahuislandproperties/blog/?template=oahuislandproperties"><span>Blog</span></a></li>
+                        <li><a href="/oahuislandproperties/member/contact/?template=oahuislandproperties" class="popup" rel="nofollow"><span>Contact Us</span></a></li>
                     </ul>
 
                 </div>
@@ -2201,9 +2201,9 @@
                 <div class="medium-12 columns bottomNav">
 
                     <ul>
-                        <li><a href="/dash/realgeeks/home" ><span>Home</span></a></li>
+                        <li><a href="/oahuislandproperties/home" ><span>Home</span></a></li>
                         <li><a href="/search/advanced_search/" ><span>Advanced Search</span></a></li>
-                        <li><a href="/dash/realgeeks/selling" ><span>Selling</span></a></li>
+                        <li><a href="/oahuislandproperties/selling" ><span>Selling</span></a></li>
                         <li><a href="/buying/" ><span>Buying</span></a></li>
                         <li><a href="/foreclosures/" ><span>Foreclosures</span></a></li>
                         <li><a href="/about/" ><span>About Us</span></a></li>
@@ -2236,7 +2236,7 @@
                                 var DOMPARSER = new DOMParser().parseFromString.bind(new DOMParser());
                                 var monthShortNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec" ];
 
-                                fetch(document.location.protocol + '//' + document.location.host + '/dash/realgeeks/feed').then(function (res) {
+                                fetch(document.location.protocol + '//' + document.location.host + '/oahuislandproperties/feed').then(function (res) {
                                     res.text().then(function (str) {
                                         var doc = DOMPARSER(str, "text/xml");
                                         var items = doc.querySelectorAll('item');
@@ -2299,7 +2299,7 @@
                         }    function initAll() {
                             changeSearchCheckbox();
                             changeNavIcons();
-                            if (document.location.pathname == '/' || document.location.pathname == '/dash/realgeeks/home') {
+                            if (document.location.pathname == '/' || document.location.pathname == '/oahuislandproperties') {
                                 changeProperty();
                                 initNews();
                                 $("#new-property-container").after($("#join-us-in-instagram"));
